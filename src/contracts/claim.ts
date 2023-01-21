@@ -13,12 +13,10 @@ import {
 } from 'scrypt-ts'
 
 export class Claim extends SmartContract {
-    // @prop(true)
-    @prop()
+    @prop(true)
     winner: PubKeyHash
 
-    // @prop(true)
-    @prop()
+    @prop(true)
     open: boolean
 
     constructor(open: boolean, winner: PubKeyHash) {
